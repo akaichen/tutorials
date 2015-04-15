@@ -1,0 +1,101 @@
+header .icon-logo-s a {
+  display: block;
+}
+header .icon-logo-s a:first-child {
+  display: none;
+}
+.tutorials {
+  display: table;
+  width: 100%;
+  margin: 0 0 50px;
+}
+.tutorials .banner {
+  display: table;
+  width: 100%;
+  margin: 0 0 50px;
+  text-align: center;
+}
+.tutorials .banner img {
+  display: block;
+  margin: 0 0 -10px;
+  width: 100%;
+}
+.tutorials h1,
+.tutorials h2,
+.tutorials p,
+.tutorials ul {
+  width: 65%;
+  margin: 0 auto;
+}
+.tutorials h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 40px;
+}
+.tutorials h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 40px;
+}
+.tutorials h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.tutorials span {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 26px;
+}
+.tutorials p {
+  text-align: justify;
+  margin-bottom: 30px;
+  line-height: 26px;
+  font-size: 18px;
+}
+.tutorials p img {
+  width: 100%;
+}
+.tutorials ul li {
+  display: block;
+  padding: 0 10px 50px;
+}
+.tutorials ul li span {
+  display: block;
+  padding: 0 22px;
+}
+/* RWD */
+@media (max-width: 1000px) {
+  .tutorials h1,
+  .tutorials h2,
+  .tutorials p,
+  .tutorials ul {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .tutorials h1,
+  .tutorials h2,
+  .tutorials p,
+  .tutorials ul {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .tutorials h1,
+  .tutorials h2,
+  .tutorials p,
+  .tutorials ul {
+    width: 85%;
+  }
+  .tutorials h2 {
+    font-size: 24px;
+  }
+  .tutorials ul h3 {
+    font-size: 18px;
+  }
+  .tutorials ul li {
+    display: block;
+    padding: 0 0 20px;
+  }
+}

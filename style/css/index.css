@@ -1,0 +1,172 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background: url(../../img/index/banner.png) center bottom no-repeat;
+  background-size: 70% auto;
+}
+.banner h1,
+.banner span {
+  display: block;
+}
+.banner h1 {
+  margin-top: -100px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-family: 'Arial black';
+}
+.banner span {
+  font-size: 16px;
+}
+.intro,
+.tutorials {
+  display: table;
+  width: 100%;
+}
+.intro {
+  background-image: -webkit-linear-gradient(top, #f1f1f1, #ffffff);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 2px;
+  padding: 20px 0;
+}
+.intro .content {
+  width: 86%;
+  height: 100%;
+  margin: 0 auto;
+}
+.intro .content .in {
+  float: right;
+  width: 35%;
+  padding: 10px;
+}
+.intro .content .in img {
+  width: 100%;
+  border-radius: 5px;
+}
+.intro .content .in:first-child {
+  float: left;
+  width: 65%;
+  height: 100%;
+}
+.intro .content .in:first-child h3 {
+  font-size: 26px;
+}
+.intro .content h3 {
+  margin: 15px 10px 5px;
+  font-size: 20px;
+}
+.intro .content span {
+  margin: 0 10px;
+  font-size: 13px;
+  color: #999;
+}
+.tutorials {
+  margin-bottom: 30px;
+}
+.tutorials h2,
+.tutorials span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.tutorials h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Arial black';
+}
+.tutorials span {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.tutorials .content {
+  width: 86%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.tutorials .content div {
+  margin: -4px;
+  padding: 4px 3px;
+  display: inline-block;
+  width: 33%;
+}
+.tutorials .content div img {
+  width: 100%;
+}
+/* RWD */
+@media (max-width: 1000px) {
+  .banner {
+    height: 450px;
+    background-size: 90% auto;
+  }
+  .banner h1 {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 800px) {
+  .banner {
+    height: 400px;
+  }
+  .banner h1 {
+    margin-top: 0px;
+    font-size: 30px;
+  }
+  .banner span {
+    font-size: 14px;
+  }
+  .tutorials .content div {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    height: 300px;
+    background-size: 100% auto;
+  }
+  .banner h1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .banner span {
+    width: 90%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .intro .content .in {
+    float: none;
+    width: 100%;
+  }
+  .intro .content .in h3 {
+    margin: 10px 0 5px;
+  }
+  .intro .content .in span {
+    display: none;
+  }
+  .intro .content .in:first-child {
+    float: none;
+    width: 100%;
+  }
+  .intro .content .in:first-child h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+  }
+  .intro .content .in:first-child span {
+    display: none;
+  }
+  .tutorials h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 400px) {
+  .tutorials h2 {
+    font-size: 26px;
+  }
+  .tutorials .content div {
+    width: 100%;
+  }
+}
