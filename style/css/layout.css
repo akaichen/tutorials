@@ -232,6 +232,7 @@ header .menu.menuopen:hover i:after {
 }
 .slide-menu {
   position: fixed;
+  display: block;
   z-index: 2;
   top: 0;
   right: -300px;
@@ -243,8 +244,8 @@ header .menu.menuopen:hover i:after {
   font-size: 20px;
   padding: 30px 0 20px;
   overflow-y: auto;
-  transition: right .5s;
-  -webkit-transition: right .5s;
+  transition: right .3s;
+  -webkit-transition: right .3s;
 }
 .slide-menu.menuopen {
   right: 0;
@@ -276,7 +277,7 @@ header .menu.menuopen:hover i:after {
   border-bottom: 1px dashed #666;
 }
 .slide-menu > div div {
-  margin: 20px 10px;
+  margin: 20px 0;
   font-size: 18px;
 }
 .slide-menu .none {
@@ -317,6 +318,9 @@ footer .logo i {
 }
 /* RWD */
 @media (max-width: 600px) {
+  header .icon-logo-s {
+    display: none;
+  }
   header .icon-logo-s i {
     top: -15px;
     left: -30px;
