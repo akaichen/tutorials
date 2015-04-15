@@ -159,6 +159,7 @@ header .icon-logo-s i {
   background-image: url(../../img/layout/layout-sprite.png);
   background-position: 0 0;
   transform: scale(0.5);
+  -webkit-transform: scale(0.5);
 }
 header .menu {
   position: absolute;
