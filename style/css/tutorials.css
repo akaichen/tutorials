@@ -64,6 +64,12 @@ header .icon-logo-s a:first-child {
   display: block;
   padding: 0 22px;
 }
+.slide-menu {
+  display: none;
+}
+.slide-menu.tutorials-slide-menu {
+  display: block;
+}
 /* RWD */
 @media (max-width: 1000px) {
   .tutorials h1,
