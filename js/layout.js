@@ -1,16 +1,16 @@
 $(function(){
 	var $menu = $('header .menu'),
-			$all = $('body,header,.slide-menu');
+			$slideMenu = $('.slide-menu');
 
 	$menu.on('click',function(){
 		if(!$(this).hasClass('menuopen')){
 			$(this).addClass('menuopen');
-			$all.addClass('menuopen');
+			$slideMenu.addClass('menuopen');
 
 		}
 		else{
 			$(this).removeClass('menuopen');
-			$all.removeClass('menuopen');
+			$slideMenu.removeClass('menuopen');
 		}
 	});
 

@@ -279,6 +279,10 @@ header .menu.menuopen:hover i:after {
   margin: 20px 10px;
   font-size: 18px;
 }
+.slide-menu .none {
+  color: #888;
+  /*text-decoration:line-through;*/
+}
 .slide-menu.tutorials-slide-menu {
   display: none;
 }
