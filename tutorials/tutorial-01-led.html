@@ -13,6 +13,7 @@
 
   <!-- inject:js -->
   <script src="../js/lib/jquery.min.js"></script>
+  <script src="../js/lib/run_prettify.js"></script>
   <script src="../js/layout.js"></script>
   <script src="../js/tutorials.js"></script>
   <!-- endinject -->
@@ -20,6 +21,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="../style/css/layout.css">
   <link rel="stylesheet" href="../style/css/tutorials.css">
+  <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
   <!-- endinject -->
 
 
@@ -82,13 +84,59 @@
 			<iframe class="youtube" src="https://www.youtube.com/embed/AIGx_sUx1IU" frameborder="0" allowfullscreen></iframe>
 		</p>
 		<h2>如何接線與實作</h2>
+		<ul>
+			<li>
+				<h3>1. 接上 LED</h3>
+				<span>將 LED 的長腳接在 10 的位置，短腳接在 GND 的位置，接完 LED 之後接上電源。</span>
+				<img src="../img/tutorials/tutorial-01-02.jpg" />
+			</li>
+			<li>
+				<h3>2. 完成後的實際長相</h3>
+				<img src="../img/tutorials/tutorial-01-03.jpg" />
+			</li>
+		</ul>
+		<h2>範例程式 ( 點選「<a href="http://webduinoio.github.io/samples/content/led/" target="_blank">範例</a>」預覽 )</h2>
 		<p>
-			
+			HTML：
 		</p>
-		<h2>範例程式</h2>
-		<p>
-			
-		</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1&quot;&gt;
+
+  &lt;title&gt;LED 燈亮起來&lt;/title&gt;
+
+  &lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+  &lt;link rel='import' href='//webduino.io/components/webduino/web-arduino.html' /&gt;
+  &lt;link rel='import' href='//webduino.io/components/webduino/wa-led.html' /&gt;
+  &lt;link rel='stylesheet' href='../../bower_components/normalize.css/normalize.css' /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div id=&quot;msg&quot; class=&quot;waiting&quot;&gt;訊息: &lt;/div&gt;
+
+  &lt;form&gt;
+    &lt;label&gt;device : &lt;input type=&quot;text&quot; id=&quot;device&quot;&gt;&lt;/label&gt;
+    &lt;button class=&quot;setting&quot; id=&quot;set&quot;&gt;設定&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;div id='light' class=&quot;off&quot;&gt;
+    &lt;img src='http://i.imgur.com/T5H4MHE.png'&gt;&lt;/img&gt;
+    &lt;img src='http://i.imgur.com/8qFj2Ou.png'&gt;&lt;/img&gt;
+  &lt;/div&gt;
+
+  &lt;web-arduino id='board'&gt;
+    &lt;wa-led id='led' pin='10'&gt;&lt;/wa-led&gt;
+  &lt;/web-arduino&gt;
+
+  &lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
 	</div>
 
 	<footer>

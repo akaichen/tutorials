@@ -24,7 +24,8 @@ header .icon-logo-s a:first-child {
 .tutorials h2,
 .tutorials p,
 .tutorials ul,
-.tutorials table {
+.tutorials table,
+.tutorials pre {
   width: 65%;
   margin: 0 auto;
 }
@@ -73,8 +74,11 @@ header .icon-logo-s a:first-child {
   padding: 0 22px;
 }
 .tutorials ul li img {
-  margin: 10px 20px 20px 20px;
+  margin: 10px 20px 0;
   max-width: 90%;
+}
+.tutorials ul li:last-child {
+  padding-bottom: 10px;
 }
 .tutorials iframe {
   width: 100%;
@@ -113,6 +117,12 @@ header .icon-logo-s a:first-child {
 .tutorials table tr:first-child th:last-child {
   border-right-color: #000;
 }
+.tutorials pre {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  overflow: auto;
+}
 .slide-menu {
   display: none;
 }
@@ -125,7 +135,8 @@ header .icon-logo-s a:first-child {
   .tutorials h2,
   .tutorials p,
   .tutorials ul,
-  .tutorials table {
+  .tutorials table,
+  .tutorials pre {
     width: 70%;
   }
 }
@@ -134,7 +145,8 @@ header .icon-logo-s a:first-child {
   .tutorials h2,
   .tutorials p,
   .tutorials ul,
-  .tutorials table {
+  .tutorials table,
+  .tutorials pre {
     width: 80%;
   }
 }
@@ -143,7 +155,8 @@ header .icon-logo-s a:first-child {
   .tutorials h2,
   .tutorials p,
   .tutorials ul,
-  .tutorials table {
+  .tutorials table,
+  .tutorials pre {
     width: 85%;
   }
   .tutorials table {
