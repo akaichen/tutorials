@@ -10,6 +10,11 @@
 	<title>範例教學 1：控制單顆 LED 燈 :::: Webduino = Web + Arduino</title>
 
 
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
+  <link rel="stylesheet" href="../style/css/layout.css">
+  <link rel="stylesheet" href="../style/css/tutorials.css">
+  <!-- endinject -->
 
   <!-- inject:js -->
   <script src="../js/lib/jquery.min.js"></script>
@@ -18,11 +23,6 @@
   <script src="../js/tutorials.js"></script>
   <!-- endinject -->
 
-  <!-- inject:css -->
-  <link rel="stylesheet" href="../style/css/layout.css">
-  <link rel="stylesheet" href="../style/css/tutorials.css">
-  <link rel="stylesheet" href="../style/css/lib/tomorrow.css">
-  <!-- endinject -->
 
 
 
@@ -99,7 +99,7 @@
 		<p>
 			HTML：
 		</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 &lt;head&gt;
@@ -136,6 +136,81 @@
 &lt;/body&gt;
 
 &lt;/html&gt;
+</code></pre>
+		<p>
+			CSS：
+		</p>
+<pre class="prettyprint"><code>#msg, form {
+      font-size: 20px;
+  margin: 5px;
+          }
+#device {
+  max-width: 100px;
+  height: 34px;
+          }
+#set {
+  width: 70px;
+  height: 40px;
+          }
+#msg.default::after {
+  content: &quot;None!&quot;;
+          }
+#msg.waiting::after {
+  content: &quot;Loading...&quot;;
+          }
+#msg.ready::after {
+  content: &quot;Ready!&quot;;
+          }
+#msg.setting::after {
+  content: &quot;Setting...&quot;;
+          }
+#msg.set::after {
+  content: &quot;Complete!&quot;;
+          }
+img {
+  width: 100%;
+  max-width: 480px;
+          }
+.off img:last-child, .on img:first-child {
+  display: none;
+          }
+</code></pre>
+		<p>
+			JS：
+		</p>
+<pre class="prettyprint"><code>window.addEventListener('WebComponentsReady', function () {
+  var setBtn = document.getElementById('set'),
+    device = document.getElementById('device'),
+    board = document.getElementById('board');
+
+  msg.className = &quot;ready&quot;;
+  device.setAttribute('value', localStorage.device || &quot;&quot;);
+
+  setBtn.addEventListener('click', function (e) {
+    msg.className = &quot;setting&quot;;
+
+    board.device = device.value;
+    board.on('ready', ready);
+    board.init();
+
+    localStorage.device = device.value;
+
+    e.stopPropagation();
+    e.preventDefault();
+    return false;
+  }, false);
+
+  function ready() {
+    var led = document.getElementById('led'),
+      light = document.getElementById('light');
+
+    led.on();
+    light.className = 'on';
+
+    msg.className = &quot;set&quot;;
+  };
+
+}, false);
 </code></pre>
 	</div>
 

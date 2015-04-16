@@ -117,11 +117,14 @@ header .icon-logo-s a:first-child {
 .tutorials table tr:first-child th:last-child {
   border-right-color: #000;
 }
-.tutorials pre {
+.tutorials pre.prettyprint {
   word-wrap: break-word;
   word-break: break-all;
   white-space: pre-wrap;
-  overflow: auto;
+  overflow-y: auto;
+  margin: -10px auto 20px;
+  padding: 20px;
+  max-height: 300px;
 }
 .slide-menu {
   display: none;
@@ -182,5 +185,11 @@ header .icon-logo-s a:first-child {
   .tutorials ul li span {
     font-size: 16px;
     line-height: 22px;
+  }
+  .tutorials pre {
+    font-size: 14px;
+  }
+  .tutorials pre span {
+    font-size: 14px;
   }
 }
