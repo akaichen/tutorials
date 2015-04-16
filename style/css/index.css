@@ -1,3 +1,5 @@
+/* browser */
+/* main */
 .banner {
   display: flex;
   flex-direction: column;
@@ -31,7 +33,9 @@
   width: 100%;
 }
 .intro {
+  background-image: linear-gradient(top, #f1f1f1, #ffffff);
   background-image: -webkit-linear-gradient(top, #f1f1f1, #ffffff);
+  background-image: -moz-linear-gradient(top, #f1f1f1, #ffffff);
   box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 2px;
   padding: 20px 0;
 }
