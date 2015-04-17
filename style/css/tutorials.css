@@ -64,6 +64,9 @@ header .icon-logo-s a:first-child {
   margin-bottom: 30px;
   line-height: 26px;
   font-size: 18px;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
 }
 .tutorials ul li {
   display: block;
