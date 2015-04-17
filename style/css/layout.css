@@ -182,8 +182,8 @@ header .menu {
   right: 30px;
   width: 36px;
   height: 26px;
-  cursor: pointer;
   pointer-events: fill;
+  cursor: pointer;
 }
 header .menu i,
 header .menu i:before,
@@ -192,7 +192,6 @@ header .menu i:after {
   width: 32px;
   height: 6px;
   background: #000;
-  cursor: pointer;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -296,7 +295,7 @@ header .menu.menuopen:hover i:after {
 /* footer */
 footer {
   width: 100%;
-  height: 240px;
+  height: 150px;
   background: #222;
   display: flex;
   flex-direction: column;
@@ -308,9 +307,9 @@ footer .content {
   max-width: 500px;
 }
 footer .logo {
-  width: 50%;
+  width: 100%;
   padding: 5px 5px 10px;
-  border-width: 0 1px 1px 0;
+  border-width: 0;
   border-style: solid dashed solid;
   border-color: #777;
   text-align: center;
