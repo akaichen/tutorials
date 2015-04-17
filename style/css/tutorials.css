@@ -43,6 +43,9 @@ header .icon-logo-s a:first-child {
 .tutorials h3 {
   font-size: 22px;
   margin-bottom: 10px;
+  line-height: 26px;
+  margin-left: 19px;
+  text-indent: -19px;
 }
 .tutorials a:link,
 .tutorials a:active,
@@ -75,6 +78,9 @@ header .icon-logo-s a:first-child {
 .tutorials ul li span {
   display: block;
   padding: 0 22px;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
 }
 .tutorials ul li img {
   margin: 10px 20px 0;
@@ -125,7 +131,7 @@ header .icon-logo-s a:first-child {
   word-break: break-all;
   white-space: pre-wrap;
   overflow-y: auto;
-  margin: -10px auto 20px;
+  margin: -50px auto 20px;
   padding: 20px;
   max-height: 300px;
 }
