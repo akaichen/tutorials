@@ -81,8 +81,8 @@
   width: 100%;
 }
 .intro .content h3 {
-  margin: 10px 10px 5px;
-  font-size: 20px;
+  margin: 10px 5px 5px;
+  font-size: 18px;
 }
 .intro .content span {
   text-align: left;
@@ -97,6 +97,7 @@
   height: 100%;
 }
 .intro .content .in:first-child h3 {
+  margin: 15px 10px 5px;
   font-size: 26px;
 }
 .intro .content .in:first-child span {
@@ -143,6 +144,25 @@
   .banner h1 span {
     font-size: 14px;
   }
+  .intro .content .in {
+    width: 50%;
+  }
+  .intro .content .in h3 {
+    margin: 10px 0 5px;
+  }
+  .intro .content .in span {
+    display: none;
+  }
+  .intro .content .in:first-child {
+    width: 50%;
+  }
+  .intro .content .in:first-child h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+  }
+  .intro .content .in:first-child span {
+    display: none;
+  }
   .tutorials .content div {
     width: 50%;
   }
@@ -162,22 +182,9 @@
     float: none;
     width: 100%;
   }
-  .intro .content .in h3 {
-    margin: 10px 0 5px;
-  }
-  .intro .content .in span {
-    display: none;
-  }
   .intro .content .in:first-child {
     float: none;
     width: 100%;
-  }
-  .intro .content .in:first-child h3 {
-    font-size: 20px;
-    margin: 10px 0 5px;
-  }
-  .intro .content .in:first-child span {
-    display: none;
   }
   .tutorials h2 {
     font-size: 26px;
