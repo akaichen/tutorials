@@ -81,6 +81,7 @@
 }
 .intro .content .in img {
   width: 100%;
+  height: 150px;
   border-radius: 5px;
 }
 .intro .content .in:first-child {
@@ -90,6 +91,9 @@
 }
 .intro .content .in:first-child h3 {
   font-size: 26px;
+}
+.intro .content .in:first-child img {
+  height: auto;
 }
 .intro .content h3 {
   margin: 15px 10px 5px;
@@ -191,8 +195,17 @@
   .banner h1 span {
     display: none;
   }
+  .intro h2 {
+    font-size: 22px;
+  }
+  .intro span {
+    font-size: 15px;
+  }
   .tutorials h2 {
-    font-size: 26px;
+    font-size: 22px;
+  }
+  .tutorials span {
+    font-size: 15px;
   }
   .tutorials .content div {
     width: 100%;

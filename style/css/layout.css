@@ -132,6 +132,7 @@ body {
   height: 100%;
 }
 body {
+  font-family: 'Arial';
   background: #fff;
   overflow-x: hidden;
   -webkit-transition: .3s;
