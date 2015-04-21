@@ -17,6 +17,7 @@
   <!-- endinject -->
 
   <!-- inject:js -->
+  <script src="../js/lib/disqus.js"></script>
   <script src="../js/lib/jquery.min.js"></script>
   <script src="../js/lib/run_prettify.js"></script>
   <script src="../js/layout.js"></script>
@@ -116,33 +117,41 @@
 				<img src="../img/tutorials/webduino-01-02.jpg" />
 			</li>
 			<li>
-				<h3>2. 接上 LED 開始進行初始化</h3>
-				<span>將單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，<b>當 LED 亮起，表示可以開始進行初始化</b>，若 LED 遲遲沒有亮起 ( 超過三十秒 )，移除電源與 LED，重新進行此步驟。</span>
-				<img src="../img/tutorials/webduino-01-03.jpg" />
-			</li>
-			<li>
-				<h3>3. 使用 wifi 搜尋 Webduino 開發板</h3>
-				<span>使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線。</span>
-				<img src="../img/tutorials/webduino-01-04.jpg" />
-			</li>
-			<li>
-				<h3>4. 連線 Webduino 開發板進行設定</h3>
-				<span>打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b>http://192.168.4.1</b>」，即可打開 Webduino 開發板的設定頁面，開啟設定頁面後，輸入家裡、公司場所或行動裝置分享的 AP SSID 與 PASSWORD，點選送出後
-				若出現「OK」的字樣，表示 Webduino 開發板已經和家裡、公司場所或行動裝置分享的 wifi 連線，若超過三十秒沒有出現「OK」字樣，表示初始化設定失敗，請返回步驟 2 重新開始。</span>
+				<h3>2. 讓 Webduino 開發板連線網路基地台</h3>
+				<span>接著要讓 Webduino 開發板可以自行連上家裡、公司場所或行動裝置分享的網路基地台，並自動連結上雲端的伺服器，如此一來我們就能透過 wifi 去控制 Webduino 開發板。</span>
 				<img src="../img/tutorials/webduino-01-05.jpg" />
 			</li>
 			<li>
-				<h3>5. 重啟 Webduino 開發板</h3>
-				<span>出現「OK」字樣之後，表示初始化設定成功，此時<b>移除 Webduino 開發板的電源以及 LED</b>，重新再接上電源即可進行重啟。</span>
+				<h3>3. 接上 LED 開始進行初始化</h3>
+				<span>首先把單色 LED 燈的「長腳接在 3.3V」，「短腳接在 11」，完成後接上電源，<b>當 LED 亮起，表示可以開始進行初始化</b>，若 LED 遲遲沒有亮起，移除電源與 LED，重新進行此步驟，若使用電阻代替 LED，則可直接進行步驟 4。</span>
+				<img src="../img/tutorials/webduino-01-03.jpg" />
 			</li>
 			<li>
-				<h3>6. 打開連線狀態網頁，確定是否連線</h3>
-				<span>Webduino 開發板重啟後，可以連結 <a href="http://webduino.io/device.html" target="_blank">http://webduino.io/device.html</a> 確認是否連線成功，若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟二重新初始化設定。</span>
+				<h3>4. 使用 wifi 搜尋 Webduino 開發板</h3>
+				<span>使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線。( 範例名稱為 wa101 )</span>
+				<img src="../img/tutorials/webduino-01-04.jpg" />
+			</li>
+			<li>
+				<h3>5. 連線 Webduino 開發板進行設定</h3>
+				<span>打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b>http://192.168.4.1</b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( <b>此處的 SSID 為網路基地台的 SSID，並非 Webduino 開發板</b>，要特別注意！ )</span>
+				<img src="../img/tutorials/webduino-01-07.jpg" />
+			</li>
+			<li>
+				<h3>6. 重啟 Webduino 開發板</h3>
+				<span>輸入完 SSID 與 PASSWORD 之後，點選送出，若出現「OK」的字樣，表示 Webduino 開發板已經初始化成功，並且可以和家裡、公司場所或行動裝置分享的網路基地台連線，此時<b>移除 Webduino 開發板的電源以及 LED</b>，重新再接上電源即可進行重啟。( 若遲遲沒有出現「OK」字樣，表示初始化設定不成功，返回步驟 3 重新開始 )</span>
+				<img src="../img/tutorials/webduino-01-08.jpg" />
+			</li>
+			<li>
+				<h3>7. 確認連線是否成功</h3>
+				<span>Webduino 開發板重啟後，可以連結 <a href="http://webduino.io/device.html" target="_blank">http://webduino.io/device.html</a> 確認是否連線成功，<b>連線成功後即可開始玩轉 Webduino</b>。( 若在網頁上沒有對應 Webduino 開發板，則需重啟 Webduino 開發板或返回步驟 3 重新初始化設定 )</span>
 				<img src="../img/tutorials/webduino-01-06.jpg" />
 			</li>
 		</ul>
 	</div>
 
+  <div class="disqus">
+  	<div id="disqus_thread"></div>
+	</div>
 	<footer>
 	    <div class="content">
 	    	<div class="logo">

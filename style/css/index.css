@@ -10,32 +10,62 @@
   -webkit-justify-content: center;
   -webkit-align-items: center;
   width: 100%;
-  height: 500px;
-  background: url(../../img/index/banner.png) center bottom no-repeat;
-  background-size: 70% auto;
+  height: 1000px;
+  max-height: 100vh;
+  background: url(../../img/index/banner1.jpg) center top no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
 }
 .banner h1,
 .banner span {
   display: block;
 }
 .banner h1 {
-  margin-top: -100px;
-  margin-bottom: 20px;
+  display: block;
   font-size: 36px;
   font-family: 'Arial black';
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 50px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+  text-align: center;
 }
-.banner span {
-  font-size: 16px;
+.banner h1 span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: 'Arial';
+  font-weight: normal;
 }
 .intro,
 .tutorials {
   display: table;
   width: 100%;
 }
+.intro h2,
+.tutorials h2,
+.intro span,
+.tutorials span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.intro h2,
+.tutorials h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Arial black';
+}
+.intro span,
+.tutorials span {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
 .intro {
-  background-image: linear-gradient(top, #f1f1f1, #ffffff);
-  background-image: -webkit-linear-gradient(top, #f1f1f1, #ffffff);
-  background-image: -moz-linear-gradient(top, #f1f1f1, #ffffff);
   box-shadow: rgba(0, 0, 0, 0.1) 0 -2px 0 2px;
   padding: 20px 0;
 }
@@ -66,28 +96,13 @@
   font-size: 20px;
 }
 .intro .content span {
+  text-align: left;
   margin: 0 10px;
   font-size: 13px;
   color: #999;
 }
 .tutorials {
-  margin-bottom: 30px;
-}
-.tutorials h2,
-.tutorials span {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-.tutorials h2 {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 36px;
-  font-family: 'Arial black';
-}
-.tutorials span {
-  font-size: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .tutorials .content {
   width: 86%;
@@ -108,10 +123,9 @@
 @media (max-width: 1000px) {
   .banner {
     height: 450px;
-    background-size: 90% auto;
   }
   .banner h1 {
-    margin-top: -50px;
+    padding: 25px;
   }
 }
 @media (max-width: 800px) {
@@ -119,10 +133,10 @@
     height: 400px;
   }
   .banner h1 {
-    margin-top: 0px;
     font-size: 30px;
+    padding: 15px;
   }
-  .banner span {
+  .banner h1 span {
     font-size: 14px;
   }
   .tutorials .content div {
@@ -132,17 +146,12 @@
 @media (max-width: 600px) {
   .banner {
     height: 300px;
-    background-size: 100% auto;
   }
   .banner h1 {
-    margin-top: 0px;
-    margin-bottom: 5px;
     font-size: 20px;
+    padding: 10px;
   }
-  .banner span {
-    width: 90%;
-    text-align: center;
-    line-height: 20px;
+  .banner h1 span {
     font-size: 14px;
   }
   .intro .content .in {
@@ -170,7 +179,18 @@
     font-size: 26px;
   }
 }
+@media (max-width: 500px) {
+  .banner {
+    height: 200px;
+  }
+}
 @media (max-width: 400px) {
+  .banner h1 {
+    border-width: 1px 0;
+  }
+  .banner h1 span {
+    display: none;
+  }
   .tutorials h2 {
     font-size: 26px;
   }

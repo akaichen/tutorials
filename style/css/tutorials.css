@@ -7,7 +7,9 @@ header .icon-logo-s a:first-child {
 .tutorials {
   display: table;
   width: 100%;
-  margin: 0 0 50px;
+  margin: 0 0 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
 }
 .tutorials .banner {
   display: table;
@@ -26,7 +28,7 @@ header .icon-logo-s a:first-child {
 .tutorials ul,
 .tutorials table,
 .tutorials pre {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
 }
 .tutorials h1 {
@@ -64,9 +66,8 @@ header .icon-logo-s a:first-child {
 }
 .tutorials p {
   text-align: justify;
-  margin-bottom: 30px;
   line-height: 26px;
-  font-size: 18px;
+  font-size: 17px;
   word-wrap: break-word;
   word-break: break-all;
   white-space: pre-wrap;
@@ -83,7 +84,7 @@ header .icon-logo-s a:first-child {
   white-space: pre-wrap;
 }
 .tutorials ul li img {
-  margin: 10px 20px 0;
+  margin: 20px 20px 0;
   max-width: 90%;
 }
 .tutorials ul li:last-child {
@@ -96,6 +97,7 @@ header .icon-logo-s a:first-child {
   box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 0 0;
 }
 .tutorials table {
+  margin-bottom: 70px;
   border: 7px solid #000;
   font-size: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 0 0;
@@ -141,6 +143,12 @@ header .icon-logo-s a:first-child {
 .slide-menu.tutorials-slide-menu {
   display: block;
 }
+/* disqus */
+.disqus {
+  display: block;
+  margin: 0 auto 50px;
+  width: 60%;
+}
 /* RWD */
 @media (max-width: 1000px) {
   .tutorials h1,
@@ -151,6 +159,9 @@ header .icon-logo-s a:first-child {
   .tutorials pre {
     width: 70%;
   }
+  .disqus {
+    width: 70%;
+  }
 }
 @media (max-width: 800px) {
   .tutorials h1,
@@ -159,6 +170,9 @@ header .icon-logo-s a:first-child {
   .tutorials ul,
   .tutorials table,
   .tutorials pre {
+    width: 80%;
+  }
+  .disqus {
     width: 80%;
   }
 }
@@ -200,5 +214,8 @@ header .icon-logo-s a:first-child {
   }
   .tutorials pre span {
     font-size: 14px;
+  }
+  .disqus {
+    width: 85%;
   }
 }
