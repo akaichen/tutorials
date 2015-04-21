@@ -132,7 +132,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Arial';
+  font-family: 'STHeiti', 'Microsoft JhengHei', 'Arial';
   background: #fff;
   overflow-x: hidden;
   -webkit-transition: .3s;
