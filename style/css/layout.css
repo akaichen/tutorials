@@ -289,6 +289,9 @@ header .menu.menuopen:hover i:after {
   margin: 20px 0;
   font-size: 18px;
 }
+.slide-menu > div div:last-child {
+  margin-bottom: 10px;
+}
 .slide-menu .none {
   color: #888;
 }

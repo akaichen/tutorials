@@ -14,7 +14,7 @@ header .icon-logo-s a:first-child {
 .tutorials .banner {
   display: table;
   width: 100%;
-  margin: 0 0 50px;
+  margin: 0 auto 50px;
   text-align: center;
 }
 .tutorials .banner img {
@@ -33,7 +33,7 @@ header .icon-logo-s a:first-child {
 }
 .tutorials h1 {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 40px;
 }
 .tutorials h2 {
@@ -61,10 +61,11 @@ header .icon-logo-s a:first-child {
 }
 .tutorials span {
   text-align: justify;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 26px;
 }
 .tutorials p {
+  color: #555;
   text-align: justify;
   line-height: 26px;
   font-size: 17px;
@@ -72,23 +73,31 @@ header .icon-logo-s a:first-child {
   word-break: break-all;
   white-space: pre-wrap;
 }
+.tutorials ul {
+  margin-bottom: 30px;
+}
 .tutorials ul li {
   display: block;
-  padding: 0 10px 50px;
+  padding: 0 10px 20px;
 }
 .tutorials ul li span {
+  color: #555;
   display: block;
   padding: 0 22px;
   word-wrap: break-word;
   word-break: break-all;
   white-space: pre-wrap;
 }
+.tutorials ul li.list span {
+  padding: 0 22px 0 45px;
+  text-indent: -25px;
+}
 .tutorials ul li img {
-  margin: 20px 20px 0;
+  margin: 20px 20px 20px;
   max-width: 90%;
 }
 .tutorials ul li:last-child {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 .tutorials iframe {
   width: 100%;
