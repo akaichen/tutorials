@@ -100,8 +100,8 @@
 				<img src="../img/tutorials/tutorial-01-03.jpg" />
 			</li>
 		</ul>
-		<h2>範例解析 ( <a href="http://jsbin.com/raniwi/5/edit?html,output" target="_blank">jsbin 預覽</a> )</h2>
-		<p>一開始先在 HTML 的 header 引入四個項目，第一個 webcomponents.js 的目的在讓 WebComponents 可以支援舊版的瀏覽器，web-arduino.html 是 Webduino 的 WebComponent，wa-led.html 則是這個範例會用到的 LED 元件的 WebComponent。
+		<h2>範例解析 ( <a href="http://webduinoio.github.io/samples/content/led/" target="_blank">快速體驗</a>、<a href="http://jsbin.com/raniwi/5/edit?html,output" target="_blank">jsbin 範例</a>、<a href="http://webduino.io/device.html" target="_blank">檢查連線狀態</a> )</h2>
+		<p>一開始先在 HTML 的 header 引入四個項目，第一個 webcomponents.js 的目的在讓瀏覽器可以支援 WebComponents (因為不是所有的瀏覽器都支援 )，web-arduino.html 是 Webduino 的 WebComponent，wa-led.html 則是這個範例會用到的 LED 元件的 WebComponent。
 		</p>
     <pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
 &lt;link rel='import' href='//webduino.io/components/webduino/web-arduino.html' /&gt;
@@ -113,7 +113,7 @@
   &lt;img src='http://i.imgur.com/T5H4MHE.png'&gt;&lt;/img&gt;
   &lt;img src='http://i.imgur.com/8qFj2Ou.png'&gt;&lt;/img&gt;
 &lt;/div&gt;
-&lt;web-arduino id=&quot;board&quot; device='4D0g'&gt;
+&lt;web-arduino id=&quot;board&quot; device='你的 device 名稱'&gt;
   &lt;wa-led id='led' pin='10'&gt;&lt;/wa-led&gt;
 &lt;/web-arduino&gt;
 </code></pre>
@@ -152,7 +152,7 @@
 
 }, false);
 </code></pre>
-  <p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/led/" target="_blank">範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話 LED 燈就會亮起，如果要讓點選會有亮滅的效果，可以參考這個 <a href="http://jsbin.com/raniwi/5/edit?html,output" target="_blank">jsbin 範例</a>，實際在上面修改體驗相關效果喔
+  <p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/led/" target="_blank">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話 LED 燈就會亮起，如果要讓點選會有亮滅的效果，可以參考這個 <a href="http://jsbin.com/raniwi/5/edit?html,output" target="_blank">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。
   </p>
 	</div>
 
