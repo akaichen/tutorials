@@ -100,7 +100,58 @@
 				<img src="../img/tutorials/tutorial-03-03.jpg" />
 			</li>
 		</ul>
-		<h2>範例解析 ( <a href="http://webduinoio.github.io/samples/content/rgbled/index.html" target="_blank">快速體驗</a>、<a href="http://jsbin.com/raniwi/11/edit?html,js,output" target="_blank">jsbin 範例</a>、<a href="http://webduino.io/device.html" target="_blank">檢查連線狀態</a> )</h2>
+		<h2>範例解析 ( <a href="http://webduinoio.github.io/samples/content/rgbled/index.html" target="_blank">快速體驗</a>、<a href="http://jsbin.com/ridifi/6/edit?html,js,output" target="_blank">jsbin 範例</a>、<a href="http://webduino.io/device.html" target="_blank">檢查連線狀態</a> )</h2>
+		<p>與 LED 範例比較不同的地方，在於我們這裡要引入另外一個名為「rgbled」的 WebComponent，不過寫法和引入的位置仍然是相同的是在 header 裡頭。
+		</p>
+		<pre><code>&lt;script src=&quot;http://webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
+&lt;link rel='import' href='http://webduino.io/components/webduino/web-arduino.html' /&gt;
+&lt;link rel='import' href='http://webduino.io/components/webduino/wa-rgbled.html'/&gt;
+</code></pre>
+		<p>然後在 body 裡頭放入四個按鈕，分別是紅色 (redBtn)、藍色 (blueBtn)、綠色 (greenBtn) 以及清除 (cleanBtn)，按鈕後方就一樣是先放入 <kbd>web-arduino</kbd>，裡頭插上三色 LED 燈 <kbd>wa-rgbled</kbd>，device 要換成你手上的 Webduino 開發板 device 名稱。
+		</p>
+		<pre><code>&lt;button id='redBtn'&gt;red&lt;/button&gt;
+&lt;button id='greenBtn'&gt;green&lt;/button&gt;
+&lt;button id='blueBtn'&gt;blue&lt;/button&gt;
+&lt;button id='cleanBtn'&gt;clean&lt;/button&gt;
+
+&lt;web-arduino id='board' device='你的 device 名稱'&gt;
+  &lt;wa-rgbled id='rgb' red='6' blue='7' green='8'&gt;&lt;/wa-rgbled&gt;
+&lt;/web-arduino&gt;
+</code></pre>
+		<p>HTML 寫好之後就來寫 javascript，裡頭最重要的是我們運用了 <kbd>setColor()</kbd> 這個 api，就如同我們在設定 CSS 的 rgb 顏色一樣，裡頭也是放入三個 0 到 255 的數字，數字越大該顏色就越亮，不過由於受限於部分腳位並沒有 PWM 的設計 ( 脈衝寬度調變，可改變輸出的電壓，可以做出強弱的效果 )，在這個範例只會以亮與滅兩種狀態呈現。
+		</p>
+		<pre><code>window.addEventListener('WebComponentsReady', function () {
+  var board = document.getElementById('board');
+
+  board.on('ready',function() {
+    var redBtn = document.getElementById('redBtn'),
+      greenBtn = document.getElementById('greenBtn'),
+      blueBtn = document.getElementById('blueBtn'),
+      cleanBtn = document.getElementById('cleanBtn'),
+      rgb = document.getElementById('rgb');
+
+      redBtn.addEventListener('click', function () {
+        rgb.setColor(255, 0, 0);   //亮紅光
+      }, false);
+
+      greenBtn.addEventListener('click', function () {
+        rgb.setColor(0, 255, 0);   //亮綠光
+      }, false);
+
+      blueBtn.addEventListener('click', function () {
+        rgb.setColor(0, 0, 255);   //亮藍光
+      }, false);
+
+      cleanBtn.addEventListener('click', function () {
+        rgb.setColor(0, 0, 0);   //全部燈光熄滅
+      }, false);
+
+  });
+
+}, false);
+</code></pre>
+  <p>如果還有不清楚的，不妨利用這個 <a href="http://webduinoio.github.io/samples/content/rgbled/index.html" target="_blank">快速體驗範例</a>，填入自己 Webduino 開發板的 device 名稱，按下設定，訊息處出現 ready 的話，就可以讓不同顏色的光亮起，亦或是也可以參考這個 <a href="http://jsbin.com/ridifi/6/edit?html,js,output" target="_blank">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果。
+  </p>
 	</div>
 
   <div class="disqus">
