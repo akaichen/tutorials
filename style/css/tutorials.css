@@ -156,10 +156,11 @@ header .icon-logo-s a:first-child {
   margin: -10px auto 40px;
   padding: 20px;
   font-weight: normal;
-  font-size: 15px;
+  font-family: "verdana";
+  font-size: 14px;
 }
 .tutorials pre.prettyprint span {
-  font-size: 15px;
+  font-size: 14px;
 }
 .slide-menu {
   display: none;
