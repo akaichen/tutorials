@@ -42,6 +42,9 @@ header .icon-logo-s a:first-child {
   font-size: 30px;
   line-height: 40px;
 }
+.tutorials h2 a {
+  font-size: 22px;
+}
 .tutorials h3 {
   font-size: 22px;
   margin-bottom: 10px;
