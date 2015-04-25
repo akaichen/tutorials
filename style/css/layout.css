@@ -319,10 +319,13 @@ footer .content {
 footer .logo {
   width: 100%;
   padding: 5px 5px 10px;
-  border-width: 0;
-  border-style: solid dashed solid;
-  border-color: #777;
   text-align: center;
+}
+footer .logo a:last-child {
+  display: none;
+}
+footer .logo a:first-child {
+  display: inline;
 }
 footer .logo i {
   display: inline-block;
@@ -350,6 +353,5 @@ footer .logo i {
   }
   footer .logo {
     width: 100%;
-    border-width: 0 0 1px 0;
   }
 }

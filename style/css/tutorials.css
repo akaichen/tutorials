@@ -171,6 +171,13 @@ header .icon-logo-s a:first-child {
 .slide-menu.tutorials-slide-menu {
   display: block;
 }
+/* footer */
+footer .logo a:first-child {
+  display: none;
+}
+footer .logo a:last-child {
+  display: inline;
+}
 /* disqus */
 .disqus {
   display: block;
