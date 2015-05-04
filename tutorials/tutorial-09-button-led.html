@@ -43,44 +43,7 @@
 			<i></i>
 		</div>
 	</header>
-	<div class="slide-menu">
-		<div><a href="index.html">回首頁</a></div>
-		<div>
-			<div><a href="tutorials/webduino-01-introduction.html">基本介紹與設定</a></div>
-			<div><a href="tutorials/webduino-02-faq.html">常見問題處理</a></div>
-			<div class="none">基本電路學</div>
-		</div>
-		<div>
-			<div><a href="tutorials/tutorial-01-led.html">1. 單顆 LED 燈</a></div>
-			<div><a href="tutorials/tutorial-02-2led.html">2. 兩顆 LED 交互閃動</a></div>
-			<div><a href="tutorials/tutorial-03-rgbled.html">3. 三色 LED</a></div>
-			<div><a href="tutorials/tutorial-04-rgbled-palette.html">4. 三色 LED 調色盤</a></div>
-			<div><a href="tutorials/tutorial-05-ultrasonic.html">5. 超音波傳感器</a></div>
-			<div><a href="tutorials/tutorial-06-ultrasonic-imagesize.html">6. 超音波傳感器改變圖片大小</a></div>
-			<div><a href="tutorials/tutorial-07-ultrasonic-led.html">7. 超音波傳感器 + LED</a></div>
-			<div><a href="tutorials/tutorial-08-ultrasonic-rgbled.html">8. 超音波傳感器 + 三色 LED</a></div>
-			<div><a href="tutorials/tutorial-09-button-led.html">9. 按鈕 + LED</a></div>
-		</div>
-	</div>
-	<div class="slide-menu tutorials-slide-menu">
-		<div><a href="../index.html">回首頁</a></div>
-		<div>
-			<div><a href="webduino-01-introduction.html">基本介紹與設定</a></div>
-			<div><a href="webduino-02-faq.html">常見問題處理</a></div>
-			<div class="none">基本電路學</div>
-		</div>
-		<div>
-			<div><a href="tutorial-01-led.html">1. 控制單顆 LED 燈</a></div>
-			<div><a href="tutorial-02-2led.html">2. 兩顆 LED 交互閃動</a></div>
-			<div><a href="tutorial-03-rgbled.html">3. 控制三色 LED</a></div>
-			<div><a href="tutorial-04-rgbled-palette.html">4. 三色 LED 調色盤</a></div>
-			<div><a href="tutorial-05-ultrasonic.html">5. 控制超音波傳感器</a></div>
-			<div><a href="tutorial-06-ultrasonic-imagesize.html">6. 超音波傳感器改變圖片大小</a></div>
-			<div><a href="tutorial-07-ultrasonic-led.html">7. 超音波傳感器 + LED</a></div>
-			<div><a href="tutorial-08-ultrasonic-rgbled.html">8. 超音波傳感器 + 三色 LED</a></div>
-			<div><a href="tutorial-09-button-led.html">9. 按鈕 + LED</a></div>
-		</div>
-	</div>
+	<div class="slide-menu"></div>
 
 
 
@@ -111,7 +74,7 @@
 <p>  <img src="../img/tutorials/tutorial-09-05.jpg" alt=""></p>
 </li>
 </ul>
-<h2>範例解析 (<a href="[jsbin 範例](http://jsbin.com/latexi/4/edit?html,css,js,output">快速體驗</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
+<h2>範例解析 (<a href="[jsbin 範例](http://jsbin.com/qihono/5/edit?html,js,output">快速體驗</a>、<a href="http://webduino.io/device.html">檢查連線狀態</a>)</h2>
 <p>一開始要先引入相關的 js 與 WebComponents，因為這個範例會用到按鈕和 LED 這兩個傳感器，所以必須要引入這兩個元件的 WebComponent：<code>wa-ultrasonic</code>、<code>wa-rgbled</code>。</p>
 <pre><code>&lt;script src=&quot;//webduino.io/components/webcomponentsjs/webcomponents.js&quot;&gt;&lt;/script&gt;
 &lt;link rel=&#39;import&#39; href=&#39;//webduino.io/components/webduino/web-arduino.html&#39;&gt;&lt;/link&gt;
@@ -162,7 +125,7 @@ function boardsReady() {
    led.toggle();
  }, false);
 }
-</code></pre><p>如果還有不清楚的，可以參考這個 <a href="http://jsbin.com/latexi/4/edit?html,css,js,output">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果</p>
+</code></pre><p>如果還有不清楚的，可以參考這個 <a href="http://jsbin.com/qihono/5/edit?html,js,output">jsbin 範例</a>，實際在上面填入 device 名稱並且修改體驗相關效果</p>
 
   </div>
   <div class="disqus">
