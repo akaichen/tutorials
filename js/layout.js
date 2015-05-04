@@ -1,9 +1,16 @@
 $(function(){
 	var file = location.href.split('/'),
+			jsonURL,
 			$menu = $('header .menu'),
 			$body = $('body'),
 			$closeArea = $('div,footer').not('.slide-menu,.slide-menu div,header .menu'),
 			$slideMenu = $('.slide-menu');
+
+	if(file[file.length-1]=='index.html'){
+		jsonURL='json/tutorials.json'
+	}else{
+		jsonURL='../json/tutorials.json'
+	}
 
 	$slideMenu.append('<div></div><div></div><div></div>');
 
@@ -11,12 +18,12 @@ $(function(){
 			$slideMenuDiv2 = $('.slide-menu>div').eq(1),
 			$slideMenuDiv3 = $('.slide-menu>div').eq(2);
 
-	$.getJSON('../json/tutorials.json',function(data){
+	$.getJSON(jsonURL,function(data){
 		var array = $.map(data, function(value, index) {
     	return [value];
 		});
 		var l = array.length;
-		if(file[file.length-2]!='tutorials'){
+		if(file[file.length-1]=='index.html'){
 			$slideMenuDiv1.append('<a href="index.html">回首頁</a>');
 			for(var i=(l-2); i<l; i++){
 				$slideMenuDiv2.append('<div>'+
