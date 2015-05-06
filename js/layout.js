@@ -1,6 +1,8 @@
 $(function(){
 	var file = location.href.split('/'),
 			jsonURL,
+			$window = $(window),
+			$header = $('header'),
 			$menu = $('header .menu'),
 			$body = $('body'),
 			$closeArea = $('div,footer').not('.slide-menu,.slide-menu div,header .menu'),
@@ -11,6 +13,14 @@ $(function(){
 	}else{
 		jsonURL='../json/tutorials.json'
 	}
+
+	$window.scroll(function(){
+		if($window.scrollTop() > 0){
+			$header.addClass('scroll');
+		}else{
+			$header.removeClass('scroll');
+		}
+	});
 
 	$slideMenu.append('<div></div><div></div><div></div>');
 
@@ -53,20 +63,23 @@ $(function(){
 
 	$menu.on('click',_menuToggle);
 	$closeArea.on('click',function(){
-		$body.removeClass('menuopen');
+		//$body.removeClass('menuopen');
+		$header.removeClass('menuopen');
 		$menu.removeClass('menuopen');
 		$slideMenu.removeClass('menuopen');
 	});
 
 	function _menuToggle(){
 		if(!$menu.hasClass('menuopen')){
-			$body.addClass('menuopen');
+			//$body.addClass('menuopen');
+			$header.addClass('menuopen');
 			$menu.addClass('menuopen');
 			$slideMenu.addClass('menuopen');
 
 		}
 		else{
-			$body.removeClass('menuopen');
+			//$body.removeClass('menuopen');
+			$header.removeClass('menuopen');
 			$menu.removeClass('menuopen');
 			$slideMenu.removeClass('menuopen');
 		}
