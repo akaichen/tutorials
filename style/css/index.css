@@ -382,11 +382,11 @@ i.icon {
     height: 200px;
   }
   .banner h1 {
-    padding-top: 40px;
-    font-size: 40px;
+    padding-top: 30px;
+    font-size: 30px;
   }
   .banner h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media (max-width: 400px) {
