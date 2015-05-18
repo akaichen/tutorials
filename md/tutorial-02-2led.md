@@ -3,6 +3,7 @@ tag: tutorial
 src: tutorial-02-2led.html
 title: 兩顆 LED 交互閃爍
 banner: tutorial-02-01.jpg
+img: tutorial-02-01s.jpg
 date: 20150425
 ---
 

@@ -3,6 +3,7 @@ tag: tutorial
 src: tutorial-01-led.html
 title: 控制單顆 LED 燈
 banner: tutorial-01-01.jpg
+img: tutorial-01-01s.jpg
 date: 20150425
 ---
 

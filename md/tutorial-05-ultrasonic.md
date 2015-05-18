@@ -3,6 +3,7 @@ tag: tutorial
 src: tutorial-05-ultrasonic.html
 title: 控制超音波傳感器
 banner: tutorial-05-01.jpg
+img: tutorial-05-01s.jpg
 date: 20150425
 ---
 

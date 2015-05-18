@@ -3,6 +3,7 @@ tag: tutorial
 src: tutorial-09-button-led.html
 title: 利用按鈕控制 LED 燈
 banner: tutorial-09-01.jpg
+img: tutorial-09-01s.jpg
 date: 20150425
 ---
 

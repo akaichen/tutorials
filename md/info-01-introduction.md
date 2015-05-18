@@ -1,8 +1,9 @@
 ---
-tag: webduino
+tag: info
 src: info-01-introduction.html
 title: Webduino 的基本介紹
 banner: info-01-01.jpg
+img: info-01-01s.jpg
 date: 20150425
 ---
 

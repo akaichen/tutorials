@@ -1,8 +1,9 @@
 ---
-tag: webduino
+tag: info
 src: info-03-faq.html
 title: 常見問題與處理
 banner: info-03-01.jpg
+img: info-03-01s.jpg
 date: 20150425
 ---
 

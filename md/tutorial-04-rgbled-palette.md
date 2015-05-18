@@ -3,6 +3,7 @@ tag: tutorial
 src: tutorial-04-rgbled-palette.html
 title: 三色 LED 調色盤
 banner: tutorial-04-01.jpg
+img: tutorial-04-01s.jpg
 date: 20150425
 ---
 

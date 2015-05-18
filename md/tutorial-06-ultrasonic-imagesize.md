@@ -3,6 +3,7 @@ tag: tutorial
 src: tutorial-06-ultrasonic-imagesize.html
 title: 超音波傳感器改變圖片大小
 banner: tutorial-06-01.jpg
+img: tutorial-06-01s.jpg
 date: 20150425
 ---
 

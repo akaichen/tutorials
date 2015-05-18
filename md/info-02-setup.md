@@ -3,6 +3,7 @@ tag: info
 src: info-02-setup.html
 title: Webduino 初始化設定
 banner: info-02-01.jpg
+img: info-02-01s.jpg
 date: 20150420
 ---
 
@@ -44,14 +45,14 @@ date: 20150420
 
 - ###3. 使用 wifi 搜尋 Webduino 開發板
 
-	使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，**開發板的 SSID 與密碼會寫在裝置說明卡裡頭，通常為「wa」開頭**。( 範例名稱為 wa101 )
+	使用電腦或行動裝置，打開 wifi 搜尋對應的 Webduino 開發板 SSID 名稱，點選之後輸入密碼，即可讓電腦或行動裝置與 Webduino 開發板連線，**開發板的 SSID 與密碼會寫在「裝置說明卡」裡頭，通常為「wa」開頭**。( 範例名稱為 wa101 )
 
 	![Webduino - 使用 wifi 搜尋 Webduino 開發板](../img/tutorials/info-02-04.jpg)
 
 
 - ###4. 連線 Webduino 開發板進行設定
 
-	打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b>http://192.168.4.1</b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( **此處的 SSID 為網路基地台的 SSID，並非 Webduino 開發板，不要填成裝置說明卡上頭的 SSID 與 PASSWORD**，且 SSID 與 PASSWORD 有限制 14 個字元，只能大小寫的英文字母與數字的組合，要特別注意！ )
+	打開 Chrome 或 Safari 瀏覽器，於網址列輸入「<b>http://192.168.4.1</b>」，即可打開 Webduino 開發板的設定頁面，在設定頁面輸入家裡、公司場所或行動裝置分享的網路基地台 SSID 與 PASSWORD。( **此處的 SSID 為「網路基地台」的 SSID，並非 Webduino 開發板，不要填成裝置說明卡上頭的 SSID 與 PASSWORD**，且 SSID 與 PASSWORD 有限制 14 個字元，只能大小寫的英文字母與數字的組合，要特別注意！ )
 
 	![Webduino - 連線 Webduino 開發板進行設定](../img/tutorials/info-02-07.jpg)
 
