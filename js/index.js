@@ -1,15 +1,1 @@
-$(function(){
-	var $box = $('.tutorials-menu .menu-content div'),
-			$window = $(window);
-
-	$box.css({
-		'height':$box.width()/1.5+'px'
-	});
-
-	$window.resize(function(){
-		$box.css({
-			'height':$box.width()/1.5+'px'
-		});
-	});
-
-});
+$(function(){var i=$(".tutorials-menu .menu-content div"),t=$(window);i.css({height:i.width()/1.5+"px"}),t.resize(function(){i.css({height:i.width()/1.5+"px"})})});
