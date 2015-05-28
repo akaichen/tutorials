@@ -1,87 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://webduino.io/about.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
-    </url>
-    <url>
         <loc>http://webduino.io/activity.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/buy.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/buy/component-webduino-o.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/buy/component-webduino-v1.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/buy/package-webduino-basic.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/buy/package-webduino-plus.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/info-01-introduction.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/info-02-setup.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/info-03-faq.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-01-led.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-02-2led.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-03-rgbled.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-04-rgbled-palette.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-05-ultrasonic.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-06-ultrasonic-imagesize.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-07-ultrasonic-led.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-08-ultrasonic-rgbled.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
     <url>
         <loc>http://webduino.io/tutorials/tutorial-09-button-led.html</loc>
-        <lastmod>2015-05-28T07:57:22.000Z</lastmod>
+        <lastmod>2015-05-28T08:05:21.000Z</lastmod>
     </url>
 </urlset>
